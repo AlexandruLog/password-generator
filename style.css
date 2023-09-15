@@ -1,0 +1,102 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  background: linear-gradient(to left, blueviolet, violet);
+  font-family: sans-serif;
+}
+
+.container {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background: linear-gradient(to left, rgb(124, 40, 203), rgb(203, 111, 203));
+  width: 320px;
+  height: 230px;
+  padding: 14px 19px 25px 19px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#title {
+  font-size: 1.3rem;
+  color: #ffffff;
+  width: max-content;
+}
+
+.settings #passwordLength {
+  font-size: 1.1rem;
+  width: 25px;
+  height: 25px;
+  border: none;
+  outline: none;
+  text-align: center;
+  border-radius: 4px;
+}
+
+.settings label {
+  color: #fff;
+}
+
+.final-result {
+  background-color: #f0f0f0;
+  color: black;
+  border-radius: 5px;
+}
+
+.the-buttons {
+  width: 90%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.the-buttons button {
+  width: 80px;
+  height: 30px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.22s, color 0.17s;
+}
+
+.the-buttons button:hover {
+  background-color: blueviolet;
+  color: white;
+}
+
+#generatedResult {
+  padding: 4px 12px;
+  text-align: center;
+  width: 193px;
+  height: 25px;
+  user-select: none;
+}
+
+/* Class Lists */
+
+.copied-animation {
+  animation: colorText 5s linear;
+}
+
+@keyframes colorText {
+  from {
+    background-color: blueviolet;
+    color: #f0f0f0;
+  }
+
+  to {
+    background-color: #f0f0f0;
+  }
+}
